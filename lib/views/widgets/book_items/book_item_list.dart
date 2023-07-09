@@ -30,7 +30,7 @@ class BookItemList extends StatelessWidget {
               title: items[index].bookInfo.title,
               image: items[index].bookInfo.images?.thumbnail,
               rating: items[index].bookInfo.averageRating ?? 0,
-              bookLink: items[index].selfLink,
+              bookLink: items[index].bookInfo.previewLink,
             ),
           );
         },
